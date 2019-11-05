@@ -1,0 +1,36 @@
+<div class="container">
+  <div style="text-align: center">
+    <h1>Calcolatrice</h1>
+  </div>
+</div>
+<hr>
+<div style="text-align: center">
+  <br>
+  <input [(ngModel)]="espressione" type="text">
+  <br>
+  <br>
+  <button (click)="cancella()" type="button" class="btn btn-danger tasti">CE</button>
+  <button (click)="cancella()" type="button" class="btn btn-danger tasti">C</button>
+  <button (click)="cancella()" type="button" class="btn btn-dark tasti">⇐ </button>
+  <button (click)="visualizza('/')" type="button" class="btn btn-dark tasti">:</button>
+  <br>
+  <button (click)="visualizza('7')" type="button" class="btn btn-light tasti">7</button>
+  <button (click)="cancella()" type="button" class="btn btn-light tasti">8</button>
+  <button type="button" class="btn btn-light tasti">9</button>
+  <button type="button" class="btn btn-dark tasti">x</button>
+  <br>
+  <button type="button" class="btn btn-light tasti">4</button>
+  <button type="button" class="btn btn-light tasti">5</button>
+  <button type="button" class="btn btn-light tasti">6</button>
+  <button type="button" class="btn btn-dark tasti">-</button>
+  <br>
+  <button type="button" class="btn btn-light tasti">1</button>
+  <button type="button" class="btn btn-light tasti">2</button>
+  <button type="button" class="btn btn-light tasti">3</button>
+  <button type="button" class="btn btn-dark tasti">+</button>
+  <br>
+  <button type="button" class="btn btn tasti"></button>
+  <button type="button" class="btn btn-light tasti">0</button>
+  <button type="button" class="btn btn tasti"></button>
+  <button type="button" class="btn btn-dark tasti">=</button>
+  </div>

@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  risultato = "0";
+  espressione = "";
+
+  calcola() {
+    this.espressione = eval(this.espressione);
+  }
+
+  visualizza(valore:string) {
+    this.espressione = this.espressione + valore;
+  }
+
+  cancella() { 
+    this.risultato = "0";
+    this.espressione = "";
+  }
 }
