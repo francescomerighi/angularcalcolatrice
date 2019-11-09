@@ -14,7 +14,12 @@ export class AppComponent  {
   }
 
   visualizza(valore:string) {
+    var lastChar: string = this.espressione.substr(this.espressione.length - 1, this.espressione.length)
     this.espressione = this.espressione + valore;
+    if (this.doppioOperatore(valore) && this.doppioOperatore(lastChar)) {
+      valore = ""
+    }
+    this.espressione += valore;
   }
 
   cancella() { 
