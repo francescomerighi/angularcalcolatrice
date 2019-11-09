@@ -21,4 +21,12 @@ export class AppComponent  {
     this.risultato = "0";
     this.espressione = "";
   }
+
+  invertiSegno() {
+    this.espressione = "-" + this.espressione;
+  }
+
+  doppioOperatore(char: string) {
+    return char == "+" || char == "-" || char == "x" || char == "/" ? true : false;
+  }
 }
